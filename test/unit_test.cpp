@@ -37,8 +37,10 @@ protected:
 
 TEST_F(RecentlyUsedListTest, removeOldest)
 {
+    // begin-snippet: create-queue-length-4
     int length = 4;
     q = createQueue(length);
+    // end-snippet
 
     int pages[] = {1,2,3,1,4,5};
     LookupPages(pages, 6);
