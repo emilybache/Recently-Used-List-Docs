@@ -46,8 +46,10 @@ TEST_F(RecentlyUsedListTest, removeOldest)
     LookupPages(pages, 6);
 
     int expected[] = {5, 4, 1, 3};
+    // begin-snippet: lookup-page-order
     int actual[] = {0, 0, 0, 0};
     currentPageOrder(q, actual, length);
+    // end-snippet
     EXPECT_QUEUE_CONTENTS(expected, actual, length);
 }
 

@@ -6,6 +6,7 @@
     "build",
     "docs/_site"
   ],
+  "UrlPrefix": "https://github.com/emilybache/Recently-Used-List-Docs/blob/main",
   "UrlsAsSnippets": [],
   "WriteHeader": false,
   "Convention": "InPlaceOverwrite",

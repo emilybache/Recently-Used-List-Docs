@@ -64,3 +64,6 @@ When you're happy it's working, generate the html
     
 Then copy the contents of _site onto your webserver.
     
+    
+## TODO
+Make relative links to code snippet source code work instead of linking back to the code hosted on github.
