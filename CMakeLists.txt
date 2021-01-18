@@ -7,5 +7,4 @@ enable_testing()
 add_subdirectory(src)
 add_subdirectory(test)
 
-target_link_libraries(main src)
 

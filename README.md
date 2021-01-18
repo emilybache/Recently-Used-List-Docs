@@ -37,6 +37,33 @@ When you're happy the documentation is ready, generate the html
     
 Then copy the contents of docs/_site onto your webserver.
     
+## Suggested exercise
+First follow the above steps to make sure you can develop the documentation. 
+
+### Complete the tutorial
+The page docs/getting_started.md is supposed to contain a tutorial explaining how to insert items into the cache and 
+check what order they are in. The code in test/tutorial.cpp does this.
+ 
+Complete writing the tutorial. Include more code snippets from test/tutorial.cpp as you wish.
+
+Questions to reflect on: 
+- What is the difference between the unit tests in test/unit_test.cpp and the tutorial example in test/tutorial.cpp.
+Could you have used the code in test/unit_test.cpp for snippet examples instead of test/tutorial.cpp?
+
+### Write a how-to
+The page docs/how_to.md is incomplete. Write a how-to guide to setting up a cache that deletes old items 
+after every n insertions.
+
+Questions to reflect on:
+- What new code snippets did you need for the how-to guide? Could you have used the code in test/unit_test.cpp for snippet examples instead?
+
+### Write a high-level explanation
+The page docs/high_level_explanation.md is incomplete. Write a background explanation for the RecentlyUsedList.
+
+Questions to reflect on:
+- Did you need any new code snippets for the high-level explanation? 
+- Did you link to any other websites or reference materials? If not, should you have?
+    
 Installing dependencies
 ------------------------
 Install Ruby:
