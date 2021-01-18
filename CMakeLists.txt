@@ -7,6 +7,5 @@ enable_testing()
 add_subdirectory(src)
 add_subdirectory(test)
 
-add_executable(main src/main.c)
 target_link_libraries(main src)
 

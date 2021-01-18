@@ -1,24 +1,42 @@
 Documentation for RecentlyUsedList
 ==================================
 
-There are three unit tests and three examples in the documentation. 
+This repository contains some code, some unit tests and some documentation. The idea is to
+help you to learn about writing effective documentation, in particular using the [Divio documentation system](https://documentation.divio.com/introduction/).
 
-- What is the purpose of having documentation over and above having unit tests?
-- What kinds of information are in the documentation and not in the unit tests?
-- Write a new unit test for the new feature described below. 
-- Write the documentation for the new feature and generate new html pages.
-- Implement the new feature and make the test pass.
+## Developing the documentation
+Follow these steps
 
-New feature
------------
+### 1. Run the tests
+Use CMake to build the project and run all the tests found in the 'tests' folder. They should all pass
 
-You can dynamically increase or decrease the size of the recently used list by one. The minimum size is one.
+### 2. Regenerate snippets
+From the top level folder
 
-Generating html from the docs folder
-------------------------------------
+    mdsnippets .
+    
+### 3. Test the site
 
-Update the code snippets using [Markdown snippets](https://github.com/SimonCropp/MarkdownSnippets) 
+    cd docs
+    bundle exec jekyll serve
+    
+Then browse the site on http://localhost:4000
 
+### 4. Develop the documentation
+Write new and better documentation as you wish or as your instructor asks you to. You may want to refer to documentation 
+about [Jekyll](https://jekyllrb.com/) and the [Just The Docs Theme](https://pmarsceill.github.io/just-the-docs/).
+
+Re-run steps 1-3 as necessary to check all the tests are passing, make sure the snippets are up to date, and the 
+documentation is useful.
+
+### 5. Deploy
+When you're happy the documentation is ready, generate the html
+
+    cd docs
+    bundle exec jekyll build
+    
+Then copy the contents of docs/_site onto your webserver.
+    
 Installing dependencies
 ------------------------
 Install Ruby:
@@ -44,26 +62,6 @@ Install dotnet:
 Install [Markdown snippets](https://github.com/SimonCropp/MarkdownSnippets) 
 
     dotnet tool install -g MarkdownSnippets.Tool
-    
-## Regenerate snippets
-From the top level folder
-
-    mdsnippets .
-    
-## test the site
-
-    cd docs
-    bundle exec jekyll serve
-    
-Then browse the site on http://localhost:4000
-
-When you're happy it's working, generate the html
-
-    cd docs
-    bundle exec jekyll build
-    
-Then copy the contents of _site onto your webserver.
-    
     
 ## TODO
 Make relative links to code snippet source code work instead of linking back to the code hosted on github.

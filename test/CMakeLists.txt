@@ -1,6 +1,6 @@
 set(TEST_NAME rul_test)
 include(FetchContent)
-set(SOURCE_FILES main.cpp unit_test.cpp)
+set(SOURCE_FILES main.cpp unit_test.cpp tutorial.cpp)
 
 # uncomment these lines to enable coverage measurements using gcov
 #set(CMAKE_C_FLAGS "--coverage")
