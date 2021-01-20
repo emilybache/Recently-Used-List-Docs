@@ -5,7 +5,7 @@ This repository contains some code, some unit tests and some documentation. The 
 help you to learn about writing effective documentation, in particular using the [Divio documentation system](https://documentation.divio.com/introduction/).
 
 ## Developing the documentation
-Follow these steps
+Follow these steps:
 
 ### 1. Run the tests
 Use CMake to build the project and run all the tests found in the 'tests' folder. They should all pass
@@ -16,6 +16,7 @@ From the top level folder
     mdsnippets .
     
 ### 3. Test the site
+In another terminal window, not the one in your IDE:
 
     cd docs
     bundle exec jekyll serve
@@ -41,21 +42,18 @@ Then copy the contents of docs/_site onto your webserver.
 First follow the above steps to make sure you can develop the documentation. 
 
 ### Complete the tutorial
-The page docs/getting_started.md is supposed to contain a tutorial explaining how to insert items into the cache and 
-check what order they are in. The code in test/tutorial.cpp does this.
- 
-Complete writing the tutorial. Include more code snippets from test/tutorial.cpp as you wish.
+The page docs/getting_started.md is supposed to contain a tutorial explaining how use the RecentlyUsedList as part of a 
+DNSLookup class. Complete writing the tutorial. Include code snippets.
 
-Questions to reflect on: 
-- What is the difference between the unit tests in test/unit_test.cpp and the tutorial example in test/tutorial.cpp.
-Could you have used the code in test/unit_test.cpp for snippet examples instead of test/tutorial.cpp?
+### Complete the how-to
+The page docs/how_to.md is incomplete. Add code snippets and more how-to guides.
 
-### Write a how-to
-The page docs/how_to.md is incomplete. Write a how-to guide to setting up a cache that deletes old items 
-after every n insertions.
-
-Questions to reflect on:
-- What new code snippets did you need for the how-to guide? Could you have used the code in test/unit_test.cpp for snippet examples instead?
+### Questions to reflect on:
+- What documentation is still needed?
+- Where did you get code snippets from? Did you have to write new snippets especially?
+- Did writing the documentation prompt you to add new unit tests or to find any bugs in the code?
+- What is the difference between a unit test and a how-to guide? Could you auto-generate how-to guides from unit tests 
+in the same way as you auto-generate reference docs from comments in the code?
 
 ### Write a high-level explanation
 The page docs/high_level_explanation.md is incomplete. Write a background explanation for the RecentlyUsedList.

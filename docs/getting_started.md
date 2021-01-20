@@ -8,16 +8,22 @@ nav_order: 1
 
 First steps using this fantastic awesome functionality. Follow this guide.
 
-## Using the Recently Used List as a cache
+## Using the Recently Used List to keep track of frequently accessed items
 
-Create a Recently Used List that can hold 4 items
+In this tutorial we will see how to use a RecentlyUsedList in a DNS lookup class, to keep track of which ip addresses 
+are being looked up most frequently.
 
-<!-- snippet: create-queue -->
-<a id='snippet-create-queue'></a>
-```cpp
-Queue* q = createQueue(4);
-```
-<sup><a href='https://github.com/emilybache/Recently-Used-List-Docs/blob/main/test/tutorial.cpp#L12-L14' title='File snippet `create-queue` was extracted from'>snippet source</a> | <a href='#snippet-create-queue' title='Navigate to start of snippet `create-queue`'>anchor</a></sup>
-<!-- endSnippet -->
+We begin with a DnsLookup class that has two methods for storing and retrieving ip addresses:
 
-todo: complete the tutorial so that a user knows how to use the basic RecentlyUsedList functionality.
+TODO: code snippet
+
+We would like to extend it to also keep track of which DNS names are being accessed most often, and for that we can use
+a RecentlyUsedList.  
+
+The first thing you need to do is include the relevant .h file:
+
+TODO: code snippet 
+
+TODO: the rest of the tutorial
+
+
