@@ -17,8 +17,8 @@ We begin with a DnsLookup class that has two methods for storing and retrieving 
 
 TODO: code snippet
 
-We would like to extend it to also keep track of which DNS names are being accessed most often, and for that we can use
-a RecentlyUsedList.  
+We would like to extend it to also keep track of which DNS names have been accessed recently. We want to add a function `cachedKeys` that will return a list of DNS names in the order of which 
+were most recently accessed. For the implementation we can use a RecentlyUsedList.
 
 The first thing you need to do is include the relevant .h file:
 
