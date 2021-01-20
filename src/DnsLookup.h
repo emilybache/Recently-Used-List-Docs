@@ -12,7 +12,7 @@ public:
     void insert(const std::string& key, const std::string& value);
     std::string at(const std::string& key);
 
-    const std::vector<std::string> cachedKeys();
+    std::vector<std::string> cachedKeys() const;
 
 private:
     std::map<std::string, std::string> contents;

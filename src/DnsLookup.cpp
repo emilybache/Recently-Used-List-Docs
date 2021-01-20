@@ -13,6 +13,6 @@ std::string DnsLookup::at(const std::string& key) {
 DnsLookup::DnsLookup(int cacheSize) : cache(RecentlyUsedList(cacheSize)) {
 }
 
-const std::vector<std::string> DnsLookup::cachedKeys() {
+std::vector<std::string> DnsLookup::cachedKeys() const {
     return cache.queue;
 }
